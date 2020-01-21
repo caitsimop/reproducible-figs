@@ -24,7 +24,7 @@ bioRxiv 854976; doi: https://doi.org/10.1101/854976
 
 ## Figures produced by this code:
 
-![Correlation figure](figs/saha_cor_example.pdf)
+![Correlation figure](figs/saha_cor_example.png)
 
 
 ## R session info
