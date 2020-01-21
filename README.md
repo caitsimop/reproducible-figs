@@ -27,6 +27,8 @@ bioRxiv 854976; doi: https://doi.org/10.1101/854976
 ![Correlation figure](figs/saha_cor_example.png)
 
 
+![Heatmap](figs/saha_heatmap.png)
+
 ## R session info
 
 Output from my R session that contains R and package versions (using `sessionInfo()`):
