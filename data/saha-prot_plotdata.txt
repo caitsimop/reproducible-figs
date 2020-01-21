@@ -1,0 +1,79 @@
+Pathway	Conditions	Samples	GSVA	significance
+1	Biosynthesis of ansamycins [PATH:ko01051]	DMSO	DMSO_1	-0.47607633727421	-1
+2	Biosynthesis of ansamycins [PATH:ko01051]	DMSO	DMSO_5	-0.456785786163478	-1
+3	Biosynthesis of ansamycins [PATH:ko01051]	DMSO	DMSO_2	-0.273067406722293	-1
+4	Biosynthesis of ansamycins [PATH:ko01051]	DMSO	DMSO_3	-0.210593682149299	-1
+5	Biosynthesis of ansamycins [PATH:ko01051]	High	High_1	-0.0599261327496519	1
+6	Biosynthesis of ansamycins [PATH:ko01051]	High	High_5	0.296642619103142	1
+7	Biosynthesis of ansamycins [PATH:ko01051]	High	High_2	0.0153142840265455	1
+8	Biosynthesis of ansamycins [PATH:ko01051]	High	High_6	0.357536024644128	1
+9	Biosynthesis of ansamycins [PATH:ko01051]	High	High_3	0.218355788116389	1
+10	Biosynthesis of ansamycins [PATH:ko01051]	Low	Low_1	0.235224054809568	1
+11	Biosynthesis of ansamycins [PATH:ko01051]	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	-0.162241753976664	1
+12	Biosynthesis of ansamycins [PATH:ko01051]	Low	Low_2	0.0713957728824855	1
+13	Biosynthesis of ansamycins [PATH:ko01051]	Low	Low_3	0.374033257902443	1
+14	Energy metabolism	DMSO	DMSO_2	-0.012541740075659	0
+15	Energy metabolism	DMSO	DMSO_1	0.458886372081559	0
+16	Energy metabolism	DMSO	DMSO_5	0.310113435323517	0
+17	Energy metabolism	DMSO	DMSO_3	0.193053500067117	0
+18	Energy metabolism	High	High_1	-0.0695264571542585	-1
+19	Energy metabolism	High	High_2	-0.308017353698621	-1
+20	Energy metabolism	High	High_3	-0.106964301487867	-1
+21	Energy metabolism	High	High_5	-0.140125304326827	-1
+22	Energy metabolism	High	High_6	-0.268259549503409	-1
+23	Energy metabolism	Low	Low_2	NA	0
+24	Energy metabolism	Low	Low_1	NA	0
+25	Energy metabolism	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	NA	0
+26	Energy metabolism	Low	Low_3	NA	0
+27	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_1	0.22344119947164	0
+28	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_2	0.253452929717461	0
+29	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_3	0.276056628713501	0
+30	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_5	0.49043589901996	0
+31	Glycerolipid metabolism [PATH:ko00561]	High	High_1	-0.46655804346695	-1
+32	Glycerolipid metabolism [PATH:ko00561]	High	High_2	-0.49106024464916	-1
+33	Glycerolipid metabolism [PATH:ko00561]	High	High_3	-0.350858823420921	-1
+34	Glycerolipid metabolism [PATH:ko00561]	High	High_5	0.219120107381449	-1
+35	Glycerolipid metabolism [PATH:ko00561]	High	High_6	-0.291720769984114	-1
+36	Glycerolipid metabolism [PATH:ko00561]	Low	Low_1	NA	0
+37	Glycerolipid metabolism [PATH:ko00561]	Low	Low_2	NA	0
+38	Glycerolipid metabolism [PATH:ko00561]	Low	Low_3	NA	0
+39	Glycerolipid metabolism [PATH:ko00561]	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	NA	0
+40	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_1	0.016138751678542	0
+41	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_2	0.25693040371873	0
+42	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_3	0.209652595577793	0
+43	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_5	0.12197540980927	0
+44	Messenger RNA biogenesis [BR:ko03019]	High	High_1	-0.216164404888062	-1
+45	Messenger RNA biogenesis [BR:ko03019]	High	High_2	-0.245701613481647	-1
+46	Messenger RNA biogenesis [BR:ko03019]	High	High_3	-0.0303041094944205	-1
+47	Messenger RNA biogenesis [BR:ko03019]	High	High_5	-0.120400997230359	-1
+48	Messenger RNA biogenesis [BR:ko03019]	High	High_6	-0.0866450655131025	-1
+49	Messenger RNA biogenesis [BR:ko03019]	Low	Low_1	NA	0
+50	Messenger RNA biogenesis [BR:ko03019]	Low	Low_2	NA	0
+51	Messenger RNA biogenesis [BR:ko03019]	Low	Low_3	NA	0
+52	Messenger RNA biogenesis [BR:ko03019]	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	NA	0
+53	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_2	-0.371745187798755	-1
+54	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_1	-0.327445376643495	-1
+55	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_5	-0.37664571191342	-1
+56	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_3	-0.391345521730027	-1
+57	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_1	0.416624791463117	1
+58	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_2	0.229519901269973	1
+59	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_3	0.451608116558692	1
+60	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_5	0.196461789362498	1
+61	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_6	0.341003670418474	1
+62	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_2	NA	0
+63	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_1	NA	0
+64	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	NA	0
+65	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_3	NA	0
+66	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_2	-0.287592216502111	-1
+67	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_3	-0.103224120094523	-1
+68	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_1	-0.317148418079088	-1
+69	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_5	-0.510499119098148	-1
+70	Selenocompound metabolism [PATH:ko00450]	High	High_3	0.214621565785915	1
+71	Selenocompound metabolism [PATH:ko00450]	High	High_1	0.228230351527138	1
+72	Selenocompound metabolism [PATH:ko00450]	High	High_5	0.0682559502429395	1
+73	Selenocompound metabolism [PATH:ko00450]	High	High_2	0.126734292926962	1
+74	Selenocompound metabolism [PATH:ko00450]	High	High_6	0.102015719959426	1
+75	Selenocompound metabolism [PATH:ko00450]	Low	Low_2	0.272658818934044	1
+76	Selenocompound metabolism [PATH:ko00450]	Low	Low_3	0.245196396574174	1
+77	Selenocompound metabolism [PATH:ko00450]	Low	Low_1	0.0694256076426145	1
+78	Selenocompound metabolism [PATH:ko00450]	Low	Xu_20181212_SAHA_rapidAIM_Low_4_181214210722	0.0104715891824836	1

@@ -1,0 +1,7 @@
+x
+Biosynthesis of ansamycins [PATH:ko01051]
+Energy metabolism
+Glycerolipid metabolism [PATH:ko00561]
+Messenger RNA biogenesis [BR:ko03019]
+Pentose and glucuronate interconversions [PATH:ko00040]
+Selenocompound metabolism [PATH:ko00450]

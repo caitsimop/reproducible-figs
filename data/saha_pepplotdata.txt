@@ -1,0 +1,274 @@
+Pathway	Conditions	Samples	GSVA	significance
+1	Bacterial motility proteins [BR:ko02035]	DMSO	DMSO_1	0.517930613733693	1
+2	Bacterial motility proteins [BR:ko02035]	DMSO	DMSO_3	0.32912633990801	1
+3	Bacterial motility proteins [BR:ko02035]	DMSO	DMSO_2	0.43630810785653	1
+4	Bacterial motility proteins [BR:ko02035]	DMSO	DMSO_5	0.663741736284359	1
+5	Bacterial motility proteins [BR:ko02035]	High	High_1	-0.311198082745158	-1
+6	Bacterial motility proteins [BR:ko02035]	High	High_3	-0.534860765520278	-1
+7	Bacterial motility proteins [BR:ko02035]	High	High_6	-0.340310656206201	-1
+8	Bacterial motility proteins [BR:ko02035]	High	High_5	-0.405327663771288	-1
+9	Bacterial motility proteins [BR:ko02035]	High	High_2	-0.282560475604339	-1
+10	Bacterial motility proteins [BR:ko02035]	Low	Low_1	-0.137713951726225	-1
+11	Bacterial motility proteins [BR:ko02035]	Low	Low_3	-0.080076383418752	-1
+12	Bacterial motility proteins [BR:ko02035]	Low	Low_2	0.141173580096362	-1
+13	Bacterial motility proteins [BR:ko02035]	Low	Low_4	-0.222113950976504	-1
+14	Benzoate degradation [PATH:ko00362]	DMSO	DMSO_1	0.250283026363228	1
+15	Benzoate degradation [PATH:ko00362]	DMSO	DMSO_3	0.216329248263052	1
+16	Benzoate degradation [PATH:ko00362]	DMSO	DMSO_2	0.238858778505236	1
+17	Benzoate degradation [PATH:ko00362]	DMSO	DMSO_5	0.353141207522966	1
+18	Benzoate degradation [PATH:ko00362]	High	High_1	-0.179686201414924	-1
+19	Benzoate degradation [PATH:ko00362]	High	High_3	-0.372114829379469	-1
+20	Benzoate degradation [PATH:ko00362]	High	High_6	0.112439976189777	-1
+21	Benzoate degradation [PATH:ko00362]	High	High_5	-0.178499125026916	-1
+22	Benzoate degradation [PATH:ko00362]	High	High_2	-0.00876607292820056	-1
+23	Benzoate degradation [PATH:ko00362]	Low	Low_1	-0.0454227620274588	-1
+24	Benzoate degradation [PATH:ko00362]	Low	Low_3	-0.0607284462034359	-1
+25	Benzoate degradation [PATH:ko00362]	Low	Low_2	-0.134925485013991	-1
+26	Benzoate degradation [PATH:ko00362]	Low	Low_4	-0.10293310259296	-1
+27	Butanoate metabolism [PATH:ko00650]	DMSO	DMSO_3	0.196188294320363	1
+28	Butanoate metabolism [PATH:ko00650]	DMSO	DMSO_5	0.199915219242317	1
+29	Butanoate metabolism [PATH:ko00650]	DMSO	DMSO_1	0.131993363552664	1
+30	Butanoate metabolism [PATH:ko00650]	DMSO	DMSO_2	0.137018662743545	1
+31	Butanoate metabolism [PATH:ko00650]	High	High_6	-0.0285478897149983	-1
+32	Butanoate metabolism [PATH:ko00650]	High	High_5	-0.0924904229866111	-1
+33	Butanoate metabolism [PATH:ko00650]	High	High_3	-0.244963027068185	-1
+34	Butanoate metabolism [PATH:ko00650]	High	High_1	-0.0767700831582889	-1
+35	Butanoate metabolism [PATH:ko00650]	High	High_2	-0.13109315718185	-1
+36	Butanoate metabolism [PATH:ko00650]	Low	Low_3	-0.0869160758749702	0
+37	Butanoate metabolism [PATH:ko00650]	Low	Low_4	0.0461207966363943	0
+38	Butanoate metabolism [PATH:ko00650]	Low	Low_1	0.0517492316334369	0
+39	Butanoate metabolism [PATH:ko00650]	Low	Low_2	-0.0102090558549338	0
+40	Chloroalkane and chloroalkene degradation [PATH:ko00625]	DMSO	DMSO_3	-0.113490814876174	-1
+41	Chloroalkane and chloroalkene degradation [PATH:ko00625]	DMSO	DMSO_5	-0.208977891377495	-1
+42	Chloroalkane and chloroalkene degradation [PATH:ko00625]	DMSO	DMSO_1	-0.422618414077557	-1
+43	Chloroalkane and chloroalkene degradation [PATH:ko00625]	DMSO	DMSO_2	-0.220550667793189	-1
+44	Chloroalkane and chloroalkene degradation [PATH:ko00625]	High	High_6	-0.0269799164680345	1
+45	Chloroalkane and chloroalkene degradation [PATH:ko00625]	High	High_5	0.148556907171454	1
+46	Chloroalkane and chloroalkene degradation [PATH:ko00625]	High	High_3	0.10459006362695	1
+47	Chloroalkane and chloroalkene degradation [PATH:ko00625]	High	High_1	0.0959003211515416	1
+48	Chloroalkane and chloroalkene degradation [PATH:ko00625]	High	High_2	-0.0581310521090769	1
+49	Chloroalkane and chloroalkene degradation [PATH:ko00625]	Low	Low_3	0.13416996919052	1
+50	Chloroalkane and chloroalkene degradation [PATH:ko00625]	Low	Low_4	0.151148157509495	1
+51	Chloroalkane and chloroalkene degradation [PATH:ko00625]	Low	Low_1	0.322374111469504	1
+52	Chloroalkane and chloroalkene degradation [PATH:ko00625]	Low	Low_2	0.0223753326161335	1
+53	Cysteine and methionine metabolism [PATH:ko00270]	DMSO	DMSO_3	-0.201591305661621	-1
+54	Cysteine and methionine metabolism [PATH:ko00270]	DMSO	DMSO_5	-0.111630213754272	-1
+55	Cysteine and methionine metabolism [PATH:ko00270]	DMSO	DMSO_1	-0.21989841651327	-1
+56	Cysteine and methionine metabolism [PATH:ko00270]	DMSO	DMSO_2	-0.148629479946538	-1
+57	Cysteine and methionine metabolism [PATH:ko00270]	High	High_5	0.0324050534954596	1
+58	Cysteine and methionine metabolism [PATH:ko00270]	High	High_2	0.249928904452411	1
+59	Cysteine and methionine metabolism [PATH:ko00270]	High	High_3	0.148056346637658	1
+60	Cysteine and methionine metabolism [PATH:ko00270]	High	High_6	0.123112312595454	1
+61	Cysteine and methionine metabolism [PATH:ko00270]	High	High_1	0.0823302720398965	1
+62	Cysteine and methionine metabolism [PATH:ko00270]	Low	Low_3	0.0176762053227651	0
+63	Cysteine and methionine metabolism [PATH:ko00270]	Low	Low_4	-0.00112315087517859	0
+64	Cysteine and methionine metabolism [PATH:ko00270]	Low	Low_1	-0.224744288729242	0
+65	Cysteine and methionine metabolism [PATH:ko00270]	Low	Low_2	0.0537113455789746	0
+66	Energy metabolism	DMSO	DMSO_3	0.225977326216902	1
+67	Energy metabolism	DMSO	DMSO_5	0.35647170276616	1
+68	Energy metabolism	DMSO	DMSO_1	0.331831645003089	1
+69	Energy metabolism	DMSO	DMSO_2	0.124282641899723	1
+70	Energy metabolism	High	High_5	-0.0874482937553799	-1
+71	Energy metabolism	High	High_2	-0.313405434846677	-1
+72	Energy metabolism	High	High_6	-0.292463280144439	-1
+73	Energy metabolism	High	High_1	-0.316923761615832	-1
+74	Energy metabolism	High	High_3	-0.0398542382362206	-1
+75	Energy metabolism	Low	Low_3	0.248225919030627	0
+76	Energy metabolism	Low	Low_4	0.0874485789412713	0
+77	Energy metabolism	Low	Low_1	-0.0996626387125418	0
+78	Energy metabolism	Low	Low_2	0.0727266981532961	0
+79	Fatty acid degradation [PATH:ko00071]	DMSO	DMSO_1	0.18259210813595	1
+80	Fatty acid degradation [PATH:ko00071]	DMSO	DMSO_3	0.20876351116312	1
+81	Fatty acid degradation [PATH:ko00071]	DMSO	DMSO_2	0.184184358718024	1
+82	Fatty acid degradation [PATH:ko00071]	DMSO	DMSO_5	0.233577142327515	1
+83	Fatty acid degradation [PATH:ko00071]	High	High_6	-0.0480466777071172	-1
+84	Fatty acid degradation [PATH:ko00071]	High	High_3	-0.349374168375876	-1
+85	Fatty acid degradation [PATH:ko00071]	High	High_2	-0.116775209923654	-1
+86	Fatty acid degradation [PATH:ko00071]	High	High_5	-0.137813543988338	-1
+87	Fatty acid degradation [PATH:ko00071]	High	High_1	-0.171202866141406	-1
+88	Fatty acid degradation [PATH:ko00071]	Low	Low_1	0.0308898075124191	0
+89	Fatty acid degradation [PATH:ko00071]	Low	Low_3	0.0135203338504554	0
+90	Fatty acid degradation [PATH:ko00071]	Low	Low_2	0.0945261329584415	0
+91	Fatty acid degradation [PATH:ko00071]	Low	Low_4	0.0221022685324651	0
+92	Fructose and mannose metabolism [PATH:ko00051]	DMSO	DMSO_3	-0.221575697383969	0
+93	Fructose and mannose metabolism [PATH:ko00051]	DMSO	DMSO_5	-0.0268847960071261	0
+94	Fructose and mannose metabolism [PATH:ko00051]	DMSO	DMSO_1	-0.195659429191846	0
+95	Fructose and mannose metabolism [PATH:ko00051]	DMSO	DMSO_2	-0.108778285398569	0
+96	Fructose and mannose metabolism [PATH:ko00051]	High	High_5	0.216989810248549	1
+97	Fructose and mannose metabolism [PATH:ko00051]	High	High_3	0.198508784328764	1
+98	Fructose and mannose metabolism [PATH:ko00051]	High	High_6	0.160744719528847	1
+99	Fructose and mannose metabolism [PATH:ko00051]	High	High_2	0.163134030202144	1
+100	Fructose and mannose metabolism [PATH:ko00051]	High	High_1	-0.0946530727377366	1
+101	Fructose and mannose metabolism [PATH:ko00051]	Low	Low_3	-0.0885849775713533	0
+102	Fructose and mannose metabolism [PATH:ko00051]	Low	Low_4	0.0129549691173062	0
+103	Fructose and mannose metabolism [PATH:ko00051]	Low	Low_1	0.00270215619360675	0
+104	Fructose and mannose metabolism [PATH:ko00051]	Low	Low_2	0.153305342634395	0
+105	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_3	0.402996368865245	1
+106	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_5	0.536059749281103	1
+107	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_1	0.237978544660331	1
+108	Glycerolipid metabolism [PATH:ko00561]	DMSO	DMSO_2	0.319293888949625	1
+109	Glycerolipid metabolism [PATH:ko00561]	High	High_5	-0.0437144845867584	-1
+110	Glycerolipid metabolism [PATH:ko00561]	High	High_1	-0.436648648758348	-1
+111	Glycerolipid metabolism [PATH:ko00561]	High	High_6	-0.265831513728432	-1
+112	Glycerolipid metabolism [PATH:ko00561]	High	High_2	-0.489051051504651	-1
+113	Glycerolipid metabolism [PATH:ko00561]	High	High_3	-0.178244886477752	-1
+114	Glycerolipid metabolism [PATH:ko00561]	Low	Low_3	-0.288221686995025	0
+115	Glycerolipid metabolism [PATH:ko00561]	Low	Low_4	0.225785581423026	0
+116	Glycerolipid metabolism [PATH:ko00561]	Low	Low_1	0.304518728151733	0
+117	Glycerolipid metabolism [PATH:ko00561]	Low	Low_2	-0.318892021712372	0
+118	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_5	0.0479649766094985	0
+119	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_3	0.145715823299566	0
+120	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_1	-0.0196156288971873	0
+121	Messenger RNA biogenesis [BR:ko03019]	DMSO	DMSO_2	0.137529305143249	0
+122	Messenger RNA biogenesis [BR:ko03019]	High	High_2	-0.186816779991484	-1
+123	Messenger RNA biogenesis [BR:ko03019]	High	High_5	-0.142863139345226	-1
+124	Messenger RNA biogenesis [BR:ko03019]	High	High_6	-0.0743165881167441	-1
+125	Messenger RNA biogenesis [BR:ko03019]	High	High_3	-0.040812524822098	-1
+126	Messenger RNA biogenesis [BR:ko03019]	High	High_1	-0.224264026672994	-1
+127	Messenger RNA biogenesis [BR:ko03019]	Low	Low_4	-0.010217051750546	0
+128	Messenger RNA biogenesis [BR:ko03019]	Low	Low_3	0.139455569908492	0
+129	Messenger RNA biogenesis [BR:ko03019]	Low	Low_1	-0.0196255769705686	0
+130	Messenger RNA biogenesis [BR:ko03019]	Low	Low_2	0.124033006890747	0
+131	Naphthalene degradation [PATH:ko00626]	DMSO	DMSO_5	-0.250538848400747	-1
+132	Naphthalene degradation [PATH:ko00626]	DMSO	DMSO_2	-0.225217905875718	-1
+133	Naphthalene degradation [PATH:ko00626]	DMSO	DMSO_3	-0.0791005422790724	-1
+134	Naphthalene degradation [PATH:ko00626]	DMSO	DMSO_1	-0.442658540139221	-1
+135	Naphthalene degradation [PATH:ko00626]	High	High_6	-0.0585568313434967	1
+136	Naphthalene degradation [PATH:ko00626]	High	High_5	0.128172979961622	1
+137	Naphthalene degradation [PATH:ko00626]	High	High_3	0.0850386230126834	1
+138	Naphthalene degradation [PATH:ko00626]	High	High_2	-0.0574099880170007	1
+139	Naphthalene degradation [PATH:ko00626]	High	High_1	0.128678294411315	1
+140	Naphthalene degradation [PATH:ko00626]	Low	Low_4	0.191104329488061	1
+141	Naphthalene degradation [PATH:ko00626]	Low	Low_2	0.0562648428644976	1
+142	Naphthalene degradation [PATH:ko00626]	Low	Low_3	0.108506785748442	1
+143	Naphthalene degradation [PATH:ko00626]	Low	Low_1	0.355005056929404	1
+144	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_3	-0.402131824559363	-1
+145	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_5	-0.274325155633349	-1
+146	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_2	-0.274657918969413	-1
+147	Pentose and glucuronate interconversions [PATH:ko00040]	DMSO	DMSO_1	-0.418498680729262	-1
+148	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_6	0.426004472145106	1
+149	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_3	0.48888490157381	1
+150	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_1	0.360084814446276	1
+151	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_2	0.125713509659089	1
+152	Pentose and glucuronate interconversions [PATH:ko00040]	High	High_5	0.191679643641786	1
+153	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_3	-0.0239848907662393	1
+154	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_4	-0.131486515691614	1
+155	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_2	0.23123363877963	1
+156	Pentose and glucuronate interconversions [PATH:ko00040]	Low	Low_1	-0.17065901206005	1
+157	Phenylalanine metabolism [PATH:ko00360]	DMSO	DMSO_3	0.253957158558028	1
+158	Phenylalanine metabolism [PATH:ko00360]	DMSO	DMSO_5	0.467746837114982	1
+159	Phenylalanine metabolism [PATH:ko00360]	DMSO	DMSO_1	0.280831068293324	1
+160	Phenylalanine metabolism [PATH:ko00360]	DMSO	DMSO_2	0.211279622429699	1
+161	Phenylalanine metabolism [PATH:ko00360]	High	High_3	-0.356225395098835	-1
+162	Phenylalanine metabolism [PATH:ko00360]	High	High_5	-0.274770616070648	-1
+163	Phenylalanine metabolism [PATH:ko00360]	High	High_1	-0.322752989056852	-1
+164	Phenylalanine metabolism [PATH:ko00360]	High	High_6	0.0773111727997738	-1
+165	Phenylalanine metabolism [PATH:ko00360]	High	High_2	-0.00722854740572856	-1
+166	Phenylalanine metabolism [PATH:ko00360]	Low	Low_3	0.0712288446751811	-1
+167	Phenylalanine metabolism [PATH:ko00360]	Low	Low_4	-0.171694674302596	-1
+168	Phenylalanine metabolism [PATH:ko00360]	Low	Low_1	-0.0572068845189463	-1
+169	Phenylalanine metabolism [PATH:ko00360]	Low	Low_2	-0.206629411329377	-1
+170	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_3	-0.300591099703334	-1
+171	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_5	-0.303413655036143	-1
+172	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_1	-0.299662001009254	-1
+173	Selenocompound metabolism [PATH:ko00450]	DMSO	DMSO_2	-0.321158066688813	-1
+174	Selenocompound metabolism [PATH:ko00450]	High	High_6	0.189323413329276	1
+175	Selenocompound metabolism [PATH:ko00450]	High	High_5	0.0945100968306924	1
+176	Selenocompound metabolism [PATH:ko00450]	High	High_1	0.0679502492216481	1
+177	Selenocompound metabolism [PATH:ko00450]	High	High_3	0.322833755859048	1
+178	Selenocompound metabolism [PATH:ko00450]	High	High_2	0.123130741833919	1
+179	Selenocompound metabolism [PATH:ko00450]	Low	Low_3	-0.199266035541647	0
+180	Selenocompound metabolism [PATH:ko00450]	Low	Low_4	0.0462818579551547	0
+181	Selenocompound metabolism [PATH:ko00450]	Low	Low_1	-0.158068840303264	0
+182	Selenocompound metabolism [PATH:ko00450]	Low	Low_2	0.231565977139362	0
+183	Streptomycin biosynthesis [PATH:ko00521]	DMSO	DMSO_1	0.239901942475685	1
+184	Streptomycin biosynthesis [PATH:ko00521]	DMSO	DMSO_3	0.0881975301643325	1
+185	Streptomycin biosynthesis [PATH:ko00521]	DMSO	DMSO_2	0.274469569037355	1
+186	Streptomycin biosynthesis [PATH:ko00521]	DMSO	DMSO_5	0.33010728185088	1
+187	Streptomycin biosynthesis [PATH:ko00521]	High	High_6	-0.18634610934448	-1
+188	Streptomycin biosynthesis [PATH:ko00521]	High	High_2	-0.152393367796506	-1
+189	Streptomycin biosynthesis [PATH:ko00521]	High	High_5	-0.157000060403918	-1
+190	Streptomycin biosynthesis [PATH:ko00521]	High	High_3	-0.242613637502301	-1
+191	Streptomycin biosynthesis [PATH:ko00521]	High	High_1	0.199699515151613	-1
+192	Streptomycin biosynthesis [PATH:ko00521]	Low	Low_1	-0.0943297548873799	-1
+193	Streptomycin biosynthesis [PATH:ko00521]	Low	Low_3	-0.454289373218071	-1
+194	Streptomycin biosynthesis [PATH:ko00521]	Low	Low_2	0.0285523842550347	-1
+195	Streptomycin biosynthesis [PATH:ko00521]	Low	Low_4	-0.010630962850832	-1
+196	Synthesis and degradation of ketone bodies [PATH:ko00072]	DMSO	DMSO_3	0.190376889380577	1
+197	Synthesis and degradation of ketone bodies [PATH:ko00072]	DMSO	DMSO_5	0.19802401801349	1
+198	Synthesis and degradation of ketone bodies [PATH:ko00072]	DMSO	DMSO_1	0.215740048051878	1
+199	Synthesis and degradation of ketone bodies [PATH:ko00072]	DMSO	DMSO_2	0.268084320708724	1
+200	Synthesis and degradation of ketone bodies [PATH:ko00072]	High	High_3	-0.354626487211551	-1
+201	Synthesis and degradation of ketone bodies [PATH:ko00072]	High	High_6	0.137652258428064	-1
+202	Synthesis and degradation of ketone bodies [PATH:ko00072]	High	High_1	-0.0657477608218546	-1
+203	Synthesis and degradation of ketone bodies [PATH:ko00072]	High	High_5	-0.0284420986941434	-1
+204	Synthesis and degradation of ketone bodies [PATH:ko00072]	High	High_2	0.00401072161056867	-1
+205	Synthesis and degradation of ketone bodies [PATH:ko00072]	Low	Low_3	-0.102383053736438	-1
+206	Synthesis and degradation of ketone bodies [PATH:ko00072]	Low	Low_4	-0.0193886856075964	-1
+207	Synthesis and degradation of ketone bodies [PATH:ko00072]	Low	Low_1	-0.124251423688224	-1
+208	Synthesis and degradation of ketone bodies [PATH:ko00072]	Low	Low_2	0.00562184435840327	-1
+209	Taurine and hypotaurine metabolism [PATH:ko00430]	DMSO	DMSO_3	0.102881421248425	0
+210	Taurine and hypotaurine metabolism [PATH:ko00430]	DMSO	DMSO_5	0.392851250206235	0
+211	Taurine and hypotaurine metabolism [PATH:ko00430]	DMSO	DMSO_1	-0.00469112030132868	0
+212	Taurine and hypotaurine metabolism [PATH:ko00430]	DMSO	DMSO_2	0.208607505571968	0
+213	Taurine and hypotaurine metabolism [PATH:ko00430]	High	High_6	-0.0611946492758101	-1
+214	Taurine and hypotaurine metabolism [PATH:ko00430]	High	High_1	-0.269091571767755	-1
+215	Taurine and hypotaurine metabolism [PATH:ko00430]	High	High_3	0.0922622325174462	-1
+216	Taurine and hypotaurine metabolism [PATH:ko00430]	High	High_5	-0.0671775320813768	-1
+217	Taurine and hypotaurine metabolism [PATH:ko00430]	High	High_2	-0.176913230085489	-1
+218	Taurine and hypotaurine metabolism [PATH:ko00430]	Low	Low_3	-0.179914845291911	-1
+219	Taurine and hypotaurine metabolism [PATH:ko00430]	Low	Low_4	-0.128649852105209	-1
+220	Taurine and hypotaurine metabolism [PATH:ko00430]	Low	Low_1	-0.174781625784828	-1
+221	Taurine and hypotaurine metabolism [PATH:ko00430]	Low	Low_2	-0.180987337464398	-1
+222	Terpenoid backbone biosynthesis [PATH:ko00900]	DMSO	DMSO_3	0.226078830234549	1
+223	Terpenoid backbone biosynthesis [PATH:ko00900]	DMSO	DMSO_5	0.221389678397064	1
+224	Terpenoid backbone biosynthesis [PATH:ko00900]	DMSO	DMSO_1	0.190526211451729	1
+225	Terpenoid backbone biosynthesis [PATH:ko00900]	DMSO	DMSO_2	0.270976504850522	1
+226	Terpenoid backbone biosynthesis [PATH:ko00900]	High	High_5	-0.0254463046861744	-1
+227	Terpenoid backbone biosynthesis [PATH:ko00900]	High	High_6	0.19320001544087	-1
+228	Terpenoid backbone biosynthesis [PATH:ko00900]	High	High_3	-0.365630340478593	-1
+229	Terpenoid backbone biosynthesis [PATH:ko00900]	High	High_2	-0.0459156047898759	-1
+230	Terpenoid backbone biosynthesis [PATH:ko00900]	High	High_1	-0.133740501982395	-1
+231	Terpenoid backbone biosynthesis [PATH:ko00900]	Low	Low_3	-0.0899865133042993	0
+232	Terpenoid backbone biosynthesis [PATH:ko00900]	Low	Low_4	0.0290143933846996	0
+233	Terpenoid backbone biosynthesis [PATH:ko00900]	Low	Low_1	-0.0196032464494248	0
+234	Terpenoid backbone biosynthesis [PATH:ko00900]	Low	Low_2	-0.01673584915425	0
+235	Thiamine metabolism [PATH:ko00730]	DMSO	DMSO_3	-0.503863244136395	0
+236	Thiamine metabolism [PATH:ko00730]	DMSO	DMSO_5	-0.437162370343422	0
+237	Thiamine metabolism [PATH:ko00730]	DMSO	DMSO_1	-0.360484498594181	0
+238	Thiamine metabolism [PATH:ko00730]	DMSO	DMSO_2	0.242192104034393	0
+239	Thiamine metabolism [PATH:ko00730]	High	High_5	-0.155046441514625	0
+240	Thiamine metabolism [PATH:ko00730]	High	High_6	-0.135460875775178	0
+241	Thiamine metabolism [PATH:ko00730]	High	High_3	0.181332442811808	0
+242	Thiamine metabolism [PATH:ko00730]	High	High_2	-0.237304556938442	0
+243	Thiamine metabolism [PATH:ko00730]	High	High_1	-0.150797119760093	0
+244	Thiamine metabolism [PATH:ko00730]	Low	Low_3	0.296413355474185	1
+245	Thiamine metabolism [PATH:ko00730]	Low	Low_4	0.30789489938439	1
+246	Thiamine metabolism [PATH:ko00730]	Low	Low_1	0.422098839124509	1
+247	Thiamine metabolism [PATH:ko00730]	Low	Low_2	0.244249485418277	1
+248	Transporters [BR:ko02000]	DMSO	DMSO_1	-0.263384482679451	-1
+249	Transporters [BR:ko02000]	DMSO	DMSO_3	-0.245792958524968	-1
+250	Transporters [BR:ko02000]	DMSO	DMSO_2	-0.16651948300364	-1
+251	Transporters [BR:ko02000]	DMSO	DMSO_5	-0.215137335519381	-1
+252	Transporters [BR:ko02000]	High	High_5	0.104026866027938	1
+253	Transporters [BR:ko02000]	High	High_2	0.0949592659870255	1
+254	Transporters [BR:ko02000]	High	High_1	0.160739218120794	1
+255	Transporters [BR:ko02000]	High	High_3	0.0776326374305488	1
+256	Transporters [BR:ko02000]	High	High_6	0.248758137614367	1
+257	Transporters [BR:ko02000]	Low	Low_1	0.0179915499915883	1
+258	Transporters [BR:ko02000]	Low	Low_3	-0.109438192132203	1
+259	Transporters [BR:ko02000]	Low	Low_2	0.0441493423647124	1
+260	Transporters [BR:ko02000]	Low	Low_4	0.0418160130307661	1
+261	Tyrosine metabolism [PATH:ko00350]	DMSO	DMSO_1	-0.297302351851407	-1
+262	Tyrosine metabolism [PATH:ko00350]	DMSO	DMSO_3	-0.140741357188425	-1
+263	Tyrosine metabolism [PATH:ko00350]	DMSO	DMSO_2	-0.226162436002963	-1
+264	Tyrosine metabolism [PATH:ko00350]	DMSO	DMSO_5	-0.315072899918431	-1
+265	Tyrosine metabolism [PATH:ko00350]	High	High_5	0.161527642420603	1
+266	Tyrosine metabolism [PATH:ko00350]	High	High_2	0.0912789768182498	1
+267	Tyrosine metabolism [PATH:ko00350]	High	High_1	0.130136962464641	1
+268	Tyrosine metabolism [PATH:ko00350]	High	High_3	0.207606286812399	1
+269	Tyrosine metabolism [PATH:ko00350]	High	High_6	0.0887958354021799	1
+270	Tyrosine metabolism [PATH:ko00350]	Low	Low_1	0.24240501503844	1
+271	Tyrosine metabolism [PATH:ko00350]	Low	Low_3	0.107187170545755	1
+272	Tyrosine metabolism [PATH:ko00350]	Low	Low_2	-0.0430351655539655	1
+273	Tyrosine metabolism [PATH:ko00350]	Low	Low_4	0.0537829655199321	1
