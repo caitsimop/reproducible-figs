@@ -510,6 +510,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cmbright/ebmr10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cmbright/ebmr8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cmbright/ebmo10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cmbright/ebmo8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cmbright/ebmr17.tfm
 OUTPUT latex.out/fig_reproducibility.nav
 OUTPUT latex.out/fig_reproducibility.toc
 OUTPUT latex.out/fig_reproducibility.snm
