@@ -6,9 +6,9 @@ library(tidyverse) #install.packages("tidyverse") # this one takes a long time t
 library(ggpubr) #install.packages("ggpubr")
 #library(devtools) #install.packages("devtools")
 #library(patchwork) #devtools::install_github("thomasp85/patchwork")
-#library(limma)  #BiocManager::install("limma")
 
-#setwd("~/iclouddrive/Documents/labmeetings/2020_tutorials/reproducible-figs")
+
+setwd("~/iclouddrive/Documents/labmeetings/2020_tutorials/reproducible-figs")
 #setwd("...") ## set to your working directory (this repository)
 
 ## Read in data
@@ -69,10 +69,10 @@ linecolour <- "#FFBA49"
 
 (cor1 <- ggplot(saha, aes(x=med_pep, y = med_prot)) +
     geom_point(shape=16, alpha = 0.9, size = 5, color = pointcolour) + 
-    stat_cor(method = "pearson", size = 8) + 
-    geom_smooth(method=lm, se=T, color = linecolour, size = 2) + theme_bw(base_size=26) +
+    stat_cor(method = "pearson", size = 4) + 
+    geom_smooth(method=lm, se=T, color = linecolour, size = 2) + theme_bw(base_size=10) +
     xlab("GSVA enrichment scores (peptides)") + ylab("GSVA enrichment scores (proteins)")) 
-ggsave("./figs/saha_cor_example.pdf", p, width = 5, height = 5, units = "in")
+ggsave("./figs/saha_cor_example.png", cor1, width = 4, height = 4, units = "in")
 
 (cor2 <- ggplot(saha, aes(x=med_pep, y = med_prot)) +
     geom_point(shape=16, alpha = 0.9, size = 10, color = pointcolour) + 
@@ -84,23 +84,43 @@ ggsave("./figs/saha_cor_example.pdf", p, width = 5, height = 5, units = "in")
 ##### Combining figures...
 ## Putting heatmaps together
 ## Analysis in ./scripts/gsvaProteinLevel.R and ./scripts/gsvaPeptideLevel.R
-sahapep_data <- read.table("saha_pepplotdata.txt", header=T, row.names = 1, sep = "\t") %>% as.data.frame()
-sahaprot_data <- read.table("saha-prot_plotdata.txt", header=T, row.names = 1, sep = "\t") %>% as.data.frame()
-sahapep_dataclust<- read.table("saha-pep_dataclust.txt", sep="\t", skip=1)
-sahaprot_dataclust<- read.table("saha-prot_dataclust.txt", sep="\t", skip=1)
-
-intersect(sahapep_data$Pathway %>% unique(), sahaprot_data$Pathway %>% unique()) %>% length()
+sahapep_data <- read.table("./data/saha_pepplotdata.txt", header=T, row.names = 1, sep = "\t") %>% 
+  as.data.frame()
+sahaprot_data <- read.table("./data/saha-prot_plotdata.txt", header=T, row.names = 1, sep = "\t") %>% 
+  as.data.frame()
+sahapep_dataclust<- read.table("./data/saha-pep_dataclust.txt", sep="\t", skip=1)
+sahaprot_dataclust<- read.table("./data/saha-prot_dataclust.txt", sep="\t", skip=1)
 
 saha_data <- rbind(sahapep_data, sahaprot_data) %>% 
-  mutate(Type =  c(rep("Peptide", nrow(sahapep_data)), rep("Protein", nrow(sahaprot_data)))) #%>% na.omit()
+  mutate(Type =  c(rep("Peptide", nrow(sahapep_data)), rep("Protein", nrow(sahaprot_data)))) 
 
-saha_data$Pathway <- factor(saha_data$Pathway %>% as.character(), levels = c(sahapep_dataclust$V1 %>% as.character(), 
-                                                                             sahaprot_dataclust$V1 %>% as.character()) %>% 
-                              unique()) #%>% na.omit()
-
-
-
-
+saha_data$Pathway <- factor(saha_data$Pathway %>% as.character(), 
+                            levels = c(sahapep_dataclust$V1 %>% as.character(), 
+                            sahaprot_dataclust$V1 %>% as.character()) %>% 
+                            unique())
 
 saha_data <- saha_data %>% mutate(GSVA = ifelse(significance == 0 & Conditions != "DMSO", NA, GSVA))
-#saha_data <- saha_data[complete.cases(saha_data), ]
+
+saha_data <- saha_data %>% mutate(Samples =ifelse(
+  Samples == "Xu_20181212_SAHA_rapidAIM_Low_4_181214210722", "Low_4", as.character(Samples)))
+
+## change order of samples to be DMSO -> Low -> High
+saha_data$Samples <- factor(saha_data$Samples %>% as.character(), 
+                            levels = c("DMSO_1", "DMSO_2", "DMSO_3", "DMSO_5",
+                            "Low_1", "Low_2", "Low_3", "Low_4",
+                            "High_1", "High_2", "High_3", "High_5", "High_6"))
+
+(saha_plot <- ggplot(data = saha_data, mapping = aes(x = Samples, y = Pathway, fill = GSVA)) + 
+    facet_grid(~ Type, scales = "free", space="fixed") +
+    scale_fill_gradientn(colours=c("#67A7C1","white","#FF6F59"),
+                         #scale_fill_gradientn(colours=c(input$low_col, "white", input$high_col),
+                         space = "Lab", name="GSVA\nenrichment\nscore", na.value = "grey") + 
+    geom_tile(colour="darkgrey") +
+    xlab(label = "Sample") +
+    ylab(label="") + theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),text=element_text(size=12),
+          panel.grid.major = element_blank(), panel.grid.minor = element_blank()
+    ))
+
+ggsave("./figs/saha_heatmap.png",saha_plot, width = 18, height = 6, units="in")
+
