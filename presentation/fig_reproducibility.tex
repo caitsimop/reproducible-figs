@@ -49,7 +49,7 @@
   \invisible#2{#1}
 }
 
-\newmdenv[tikzsetting={fill=white,fill opacity=0.85, line width=4pt},backgroundcolor=none,leftmargin=0,rightmargin=0,innertopmargin=4pt]{TitleBox}
+\newmdenv[tikzsetting={fill=white,fill opacity=0.9, line width=4pt},backgroundcolor=none,leftmargin=0,rightmargin=0,innertopmargin=4pt]{TitleBox}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \makeatletter
@@ -57,13 +57,13 @@
 \makeatother
 
 \begin{document}
-\title{\Large \textbf{Stats tutorial: \\ Machine learning}}
+\title{\Large \textbf{Data viz: \\ Reproducibility}}
 \author{Caitlin Simopoulos \\ \faGithubSquare~ \vspace{.5cm} \faTwitterSquare~ caitsimop}
 %\subtitle{Lab meeting}
-\date{January 29, 2020}
+\date{January 21, 2020}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-{  \usebackgroundtemplate{\includegraphics[width=1.0\paperwidth]{figs/ml.jpg}}
+{  \usebackgroundtemplate{\includegraphics[width=1.0\paperwidth]{../figs/title_slide_example.jpg}}
 \begin{frame}[plain] 
 
 %  \vspace{15em}
@@ -75,7 +75,7 @@
  
       \vspace{.5cm}
 
-          {\normalsize January 29, 2020 \\ Caitlin Simopoulos }
+          {\normalsize January 21, 2020 \\ Caitlin Simopoulos }
        
 
       \vspace{0.5cm}
@@ -92,410 +92,74 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \begin{frame}{Overview}
-
 \be
-\item What is machine learning?
-\item Examples of ML algorithms, touching on:
-    \bi
-\item Supervised
-\item Unsupervised
-\item Deep learning
-    \ei
-\item Common challenges and limitations of ML
-\item How you can use ML in your own work    
+\item Why is reproducibility essential when analyzing/visualizing data?
+\item What is required to reproduce figures
+\item An example on how to be reproducible using R
 \ee
 
 \end{frame}
-
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{What is machine learning?}
+\begin{frame}{Why are we even talking about reproducibility?}
 
-    \only<1>{\centering 
-\Large
-``Field of study that gives computers the ability to learn without being explicitly programmed.''\\
-    \begin{flushright} --Arthur Samuel (1959) \end{flushright}}
-     
-     \only<2>{\centering 
-     \includegraphics[height=.78\textheight]{figs/endofcode.png}
-
-    { \hfill\footnotesize ``Soon we won't program computers, we'll train them like dogs." - Jason Tanz, Wired (2016) \\ 
-    \hfill \tiny Art by Edward C. Monaghan  (2016)}
-    }
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    \begin{frame}{Artificial Intelligence?}
-
-\centering
-        \only<1>{       \includegraphics[height=.9\textheight]{figs/robot.jpg}}
-        \only<2>{\includegraphics[height=.8\textheight]{figs/ml_explained.jpg}
-
-        \hfill \footnotesize \url{https://vas3k.com/blog/machine_learning/}}
-
-%Artificial intelligence is the name of a whole knowledge field, similar to biology or chemistry.
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Machine learning}
-    \only<1>{    \begin{columns}
-        \column{.6\textwidth}
-        \bi
-\item Computers (machines) recognizing patterns in data 
+    \be
+\item It saves \alert{you} time in the long run
     \bi
-\item \textit{i.e.} ``Learn'' from data! 
+        \item Small OR big changes to figures are ``easy''
     \ei
-\item Make predictions or group data points
-\item Supervised - classification or regression
-\item Unsupervised - exploratory/clustering 
-\ei    
-        \column{.4\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figs/apps.png}
-    \end{columns}}
+\item Journals often require code to be published so that the entire pipeline can be reproduced
+    \bi
+\item \alert{Shiny apps} ensure code will run and be used by researchers who may be uncomfortable with programming
+    \ei
+\item It's just good science
+    \ee
+\end{frame}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{frame}{Is this helpful?}
+
+    \only<1>{\centering
+    \includegraphics[height=.8\textheight]{../figs/nature_2020.png}}
 
     \only<2>{
         \centering
-        \includegraphics[height=.8\textheight]{figs/ml_types.jpg}
-
- \hfill \footnotesize \url{https://vas3k.com/blog/machine_learning/}
-    }
-\end{frame}    
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{\normalsize Machine learning we have all used: Linear regression}
-
-    \only<1>{
-        \centering
-        \includegraphics[height=.9\textheight]{figs/tree_scatter.pdf}
-    }
-    \only<2>{
-        \centering
-        \includegraphics[height=.9\textheight]{figs/tree_lm.pdf}
-    }
-    \only<3>{
-        \centering
-        \includegraphics[height=.9\textheight]{figs/tree_predict.pdf}
-
+    \includegraphics[height=.75\textheight]{../figs/code_avail.png}
     }
 
-    \only<4>{
-        This is a very simple example. In reality there are many other factors that \alert{may} be contributing to the volume of timber.
-
-    \vspace{0.5cm}
-     For example:
-     \bi
- \item Species of tree
- \item Amount of precipitation 
- \item Temperature
- \item Age of tree
- \item Quality of soil
- \item Presence of pests
-
-     \ei
-    }
+    \hfill\footnotesize Nature. 2020. https://doi.org/10.1038/s41586-019-1799-6
 \end{frame}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}
-\centering
-\Large
+\begin{frame}{What is required for reproducible analysis/figs?} 
 
-Supervised learning
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Supervised learning}
-\centering
-    \includegraphics[height=.9\textheight]{figs/inputoutput.pdf}
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Machine learning lingo\footnote[frame]{\href{https://ml-cheatsheet.readthedocs.io/en/latest/glossary.html}{Click here for more ML terms and their definitions.}}}
-
-\bi
-\item \textbf{Feature} - A measurable property, characteristic
-\item \textbf{Algorithm} - The model/method used to "learn" how to get from input to output 
-\item \textbf{Discrete data} - Categorical data (\textit{e.g.} fur colour)
-\item \textbf{Continuous data} - Numerical data that can be any possible number; a numerical measurement (\textit{e.g.} length of tail in cm)
-\item \textbf{Training data} - "Known" data that your algorithm learns from
-\item \textbf{Classification} - 
-\item \textbf{Clustering}
-\ei
-
-    \vspace{1cm}
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Supervised learning: Decision tree}
-\centering
-    \includegraphics[height=.9\textheight]{figs/decisiontree.pdf}
-
-
-\end{frame}    
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Ensemble learning: Random forest}
-
-    {\centering
-    \includegraphics[width=.9\textwidth]{figs/rf.pdf}}
-
-    \vspace{.5cm}
-    Many decision trees (to make a \alert{forest}!)
+    \be[<+-| alert@+>]
+\item Raw data
+\item Code used to \alert{normalize} and \alert{analyze} data 
+\item Output data file that can be directly visualized (\alert{optional})
+\item File that discloses software/package versions; download date of any files used (\textit{e.g.} databases)
+\item A ``README'' file that explains how to use your code 
     \bi
-\item All trees are ``weak'' learners
-\item Trained on bootstrapped training data
+\item can include previous point
     \ei
-
-    Final prediction is make by taking a vote from each tree.
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Support vector machines}
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}
-\centering
-\Large
-Unsupervised learning
+\item An \alert{organized} repository to store these required files 
+    \ee 
 
 \end{frame}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Unsupervised learning; clustering}
-    \begin{columns}
-        \column{.5\textwidth}
-\centering
-        \includegraphics[height=.78\textheight]{figs/unsupervised.pdf}
-        \column{.6\textwidth}
-\bi
-\item Learns from \alert{unlabelled} data (data without ``output'')
-\item Clustering is a common technique 
-    \bi
-        \item Find similarities in the data
-        \item ``Each cluster is is distinct..., and the objects within each cluster are broadly similar to each other". \footnote[frame]{\href{https://towardsdatascience.com/https-towardsdatascience-com-hierarchical-clustering-6f3c98c9d0ca}{Link to: Hierarchical clustering clearly explained}}
-    \ei
-    \ei
-
-    \end{columns}
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Hierarchical clustering}
-
-\centering
-    \includegraphics[width=\textwidth]{figs/hclust.pdf}
-\end{frame}    
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Evaluating detected clusters}
-    \begin{columns}
-        \column{.4\textwidth}
-\bi
-\item ``Cutting tree'' is subjective 
-        \bi
-    \item Can be by number of expected clusters
-    \item Can be by distance between clusters (height in plot)
-        \ei
-    \item Measure cluster metrics 
-            \bi
-            \item Silhouette
-            \item \sout<2>{Bootstrapping}
-             \ei
-
-        \ei
-
-        \column{.6\textwidth}
-        \centering
-        \includegraphics[height=.4\textheight]{figs/hierbigger.pdf}
-\includegraphics[height=.4\textheight]{figs/silhouette.pdf}
-    \end{columns}
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%\begin{frame}{Distance measurements}
-%
-%
-%\end{frame}   
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Principal Component Analysis (PCA)}
+\begin{frame}{An example:}
 
     \centering
+    \Large\url{https://github.com/caitsimop/reproducible-figs}
 
-    \includegraphics[width=.8\textwidth]{figs/pca_visual.png}
-   
-    \alert{\href{http://setosa.io/ev/principal-component-analysis/}{Click to go to PCA explained visually}}
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-\begin{frame}{PCA vs PLS-DA \footnote{\href{https://www.futurelearn.com/courses/metabolomics/0/steps/25039}{Link to: PCA vs PLS-DA info}}}
-
-    \only<1>{    \begin{columns}
-        \column{.5\textwidth}
-        {\centering\textbf{PCA}}
-\bi
-\item Unsupervised learning
-\item Unbiased
-\item Rotates data so that largest differences emphasized
-\item Loadings can describe the most influential features that drive PC scores
-    \ei
-        
-        \column{.5\textwidth}
-       {\centering\textbf{PLS-DA}}
-\bi
-\item Supervised learning
-\item Explains max. separation between labelled samples %(helpful if differences between classes is smaller than individual variation)
-\item Regression is performed to determine which features are important to class membership (labelled samples)
-\bi    
-\item VIP score
-    \ei
-\ei
- 
-    \end{columns}}
-
-    \only<2>{
-        \begin{columns}
-        \column{.5\textwidth}
-        {\centering\textbf{PCA}}
-            \centering
-            \includegraphics[width=.9\textwidth]{figs/pca_example.pdf}
-        \column{.5\textwidth}
-       {\centering\textbf{PLS-DA}}
-    \end{columns}}
-    
-
-%    Partial least squares-discriminant analysis (PLS-DA) is a \alert{supervised} machine learning technique.
-
-%    PCA is an \alert{unsupervised} machine learning technique.
-
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-\begin{frame}{K-means clustering}
-%    \only<1>{
-%        \centering
-%\includegraphics[width=.9\textwidth]{../mcmaster_labMeetings/2017Mar/figs/k-means.png}
-%    }
-%
-%    \only<2>{
-\centering
-  \animategraphics[loop,controls,height=.75\textheight]{2}{../mcmaster_labMeetings/2017Mar/figs/output/tmp-}{0}{12}
-
-    {\hfill\footnotesize\url{http://www.turingfinance.com/clustering-countries-real-gdp-growth-part2}}
-%}
-
-
-%Initialization, Assignment, and Update). These steps are repeated until either the clustering has converged or the number of iterations has been exceeded a.k.a the computational budget has been exhausted.
-%A set of  centroids are randomly initialized in the search space.
-% assign each point closest to each centroid
-% centroids value is replaced with the mean of every point that has been assigned to it
-% New iteration
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}
-\centering
-\Large
-Deep learning
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}
-\centering
-\Large
-
-Challenges and limitations of machine learning
 \end{frame}    
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Challenges of supervised learning}
+\begin{frame}{Notice the directory/folder structure}
 
-    \only<1>{\bi
-\item Over- and under-fitting of the training data
-       \bi
-   \item Algorithms do poorly on new/unseen data
-       \ei
 
-\ei
 
-\centering
-    \includegraphics[height=.5\textheight]{figs/overfitting.png}
-
-    {\footnotesize\url{https://towardsdatascience.com/underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6fe4a8a49dbf}}
-    }
-
-    \only<2>{\bi
-   \item Many algorithms are considered ``black box'' algorithms
-       \bi
-   \item Lack interpretability (\textit{e.g.} What features are the most important for classification? What are the feature thresholds?)
-       \ei
-
-\ei
-
-\centering
-    \includegraphics[height=.5\textheight]{figs/blackbox.jpg}
-
-    }
-
-    \only<3>{\bi
-   \item Many sophisticated algorithms are considered ``black box'' algorithms
-       \bi
-   \item Lack interpretability (\textit{e.g.} What features are the most important for classification? What are the feature thresholds?)
-       \ei
-
-\ei
-
-\centering
-    \includegraphics[height=.5\textheight]{figs/interpret_ml.jpg}
-
-    {\hfill\alert{\href{https://christophm.github.io/interpretable-ml-book/index.html}{Click for free book!}}}
-
-    }
+\end{frame}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{frame}{What to include in the README}
 
 
 \end{frame}    
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Challenges of unsupervised learning}
-    \bi
-\item Lack of ``true'' values; how do you know your clustering is right? Where do you ``cut'' your hierarchical clustering dendrogram? How do you know what \textit{k} to use in k-means?
-    \bi
-\item Silhouette/gap measurements help but they are not always perfect!
-    \ei 
-\item Algorithms that use random start points (\textit{e.g.} k-means) can give different results with the same data
-    \ei
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}
-
-\centering
-\Large
-
-How you can apply machine learning to your work
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{\normalsize Quality control; PCA, PLS-DA, hierarchical clustering}
-
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{PSM quality estimation; Percolator}
-
-
-\end{frame}    
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{-omics databases are resources for training data!}
-
-Even though it may seem daunting... you can train your own supervised ML algorithm!
-
-Do you ever have to sort through things manually and wish there was a tool that could just ``find'' things automatically? Maybe certain type of hard to find protein or predicted ORF? 
-
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Resources to check out}
-    
-\be
-\item Links in footnotes
-\item \url{https://vas3k.com/blog/machine_learning/}
-\item \url{http://faculty.marshall.usc.edu/gareth-james/}
-\ee
-
-\end{frame}    
-
 \end{document}
