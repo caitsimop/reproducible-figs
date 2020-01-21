@@ -24,6 +24,9 @@ bioRxiv 854976; doi: https://doi.org/10.1101/854976
 
 ## Figures produced by this code:
 
+...uh oh! Looks like these figures aren't perfect. We can't submit them looking like this... 
+Let's use our reproducible code to fix them and get them ready for publication :)
+
 ![Correlation figure](figs/saha_cor_example.png)
 
 
