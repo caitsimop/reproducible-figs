@@ -93,12 +93,42 @@
 
 \begin{frame}{Overview}
 \be
+\item What is reproducible data science?
 \item Why is reproducibility essential when analyzing/visualizing data?
 \item What is required to reproduce figures?
 \item An example on how to be reproducible using R.
 \ee
 
 \end{frame}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    \begin{frame} %{What is reproducibility?}
+        \begin{block}{What is reproducible data science?}
+           It is \textbf{raw data} and a set of instructions that explain \textbf{exactly} how you:
+\bi
+\item Completed your statistical analyses (from raw data)
+\item Produced your figures and tables
+ \ei
+        \end{block}
+
+    \end{frame}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    
+    \begin{frame}{Is this helpful?}
+
+    \only<1>{\centering
+    \includegraphics[height=.8\textheight]{../figs/nature_2020.png}}
+
+    \only<2>{
+        \centering
+    \includegraphics[height=.75\textheight]{../figs/code_avail.png}
+    }
+
+    \hfill\footnotesize Nature. 2020. https://doi.org/10.1038/s41586-019-1799-6
+\end{frame}
+
+
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{frame}{Why are we even talking about reproducibility?}
 
@@ -116,19 +146,6 @@
     \ee
 \end{frame}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{frame}{Is this helpful?}
-
-    \only<1>{\centering
-    \includegraphics[height=.8\textheight]{../figs/nature_2020.png}}
-
-    \only<2>{
-        \centering
-    \includegraphics[height=.75\textheight]{../figs/code_avail.png}
-    }
-
-    \hfill\footnotesize Nature. 2020. https://doi.org/10.1038/s41586-019-1799-6
-\end{frame}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{frame}{What is required for reproducible analysis/figs?} 
 
     \be
@@ -142,7 +159,7 @@
     \ei
 \item An \alert{organized} repository to store these required files 
     \ee 
-
+    \only<2>{ \centering\alert{Everything needed to get someone from raw data to your figures.}}
 \end{frame}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{frame}{An example:}
